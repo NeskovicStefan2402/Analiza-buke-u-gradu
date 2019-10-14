@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@drawable/poz">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_x="33dp"
+        android:layout_y="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/macTxt"
+        android:layout_width="350dp"
+        android:layout_height="61dp"
+        android:layout_x="33dp"
+        android:layout_y="664dp"
+        android:textColor="@color/plava"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/radius_btn"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="684dp" />
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="119dp"
+        android:layout_height="110dp"
+        android:layout_x="292dp"
+        android:layout_y="736dp"
+        android:src="@drawable/back1"
+        android:onClick="nazad"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="716dp" />
+</AbsoluteLayout>
